@@ -1,0 +1,16 @@
+{
+  "name": "Play Speed",
+  "description" : "changes the play rate of a video with a id of video and also works for youtube",
+  "version": "1.0",
+  "browser_action": {
+    "default_popup": "hello.html",
+    "default_icon": "fast.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["vidSpeed.js"]
+    }
+  ],
+  "manifest_version": 2
+}
